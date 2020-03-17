@@ -16,17 +16,17 @@
 .main-block__top {
   display: flex;
   justify-content: space-between;
-  width: $desktop-container-width;
+  width: $desktop-container-width - 40px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .main-block__bottom {
   display: flex;
   justify-content: space-between;
-  width: $desktop-container-width;
+  width: $desktop-container-width - 40px;
   margin: -5px auto 0;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .main-block__logo a {

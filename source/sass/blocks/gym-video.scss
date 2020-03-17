@@ -1,0 +1,38 @@
+.gym-video {
+  width: 364px;
+  height: 228px;
+  background: url("#{$prefix-css-img}gym-video-desktop@1x.jpg") no-repeat 0 0;
+
+  @include bg-retina("gym-video-desktop@2x.jpg");
+  background-size: 364px 228px;
+}
+
+.gym-video__cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(20, 54, 122, 0.5);
+}
+
+.gym-video button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: url("#{$prefix-css-img}video-btn.svg") no-repeat 0 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

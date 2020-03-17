@@ -1,0 +1,75 @@
+.gym {
+  color: $color-dark-text;
+}
+
+.gym__inner {
+  display: flex;
+  justify-content: space-between;
+  width: $desktop-container-width - 40px;
+  margin: 0 auto;
+  padding: 120px 0 0 60px;
+}
+
+.gym__text {
+  width: 355px;
+  padding: 47px 0 0;
+}
+
+.gym__text h2 {
+  margin: 0 0 8px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+}
+
+.gym__subtitle {
+  margin: 0 0 39px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.gym__paragraph {
+  margin: 0 0 8px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.9px;
+}
+
+.gym__paragraph span {
+  letter-spacing: 0;
+}
+
+.gym__image {
+  position: relative;
+  width: 660px;
+  height: 401px;
+  margin: 0;
+  background: url("#{$prefix-css-img}gym-desktop@1x.jpg") no-repeat 0 0;
+
+  @include bg-retina("gym-desktop@2x.jpg");
+  background-size: 660px 401px;
+}
+
+.gym__video {
+  position: absolute;
+  left: -63px;
+  bottom: -115px;
+}
+
+@media (max-width: $desktop-container-width - 1) {
+  .gym {
+    background-color: rgba(0, 100, 0, 0.69); // для теста
+  }
+
+  .gym__inner {
+    width: $tablet-container-width;
+    padding: 120px 0 0;
+  }
+}
