@@ -1,0 +1,151 @@
+.main-block {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #691a4f;
+}
+
+.main-block__inner {
+  width: $desktop-width1;
+  padding: 30px 20px 51px;
+}
+
+.main-block__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-block__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -5px;
+}
+
+.main-block__logo a {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+}
+
+.main-block__phone a {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main-block__container {
+  width: 396px;
+}
+
+.main-block__inner h1 {
+  margin: 71px 0 0 0;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 109px;
+  line-height: 108px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.main-block__inner h1 span {
+  font-weight: normal;
+  font-size: 49px;
+  line-height: 59px;
+  letter-spacing: 0.03em;
+}
+
+.main-block__promo {
+  list-style: none;
+  width: 132px;
+  margin: -89px 0 0 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: right;
+}
+
+.main-block__button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 83px -1px 0 0;
+}
+
+.main-block__button a {
+  display: block;
+  width: 234px;
+  padding: 20px 20px 19px;
+  min-height: 61px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  border: 4px solid #ffffff;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-block__photo {
+  width: 500px;
+  height: 556px;
+  margin: 0 122px 0 0;
+  background: url("#{$prefix-css-img}superman-desktop@1x.jpg") no-repeat 0 0;
+
+  @include bg-retina("superman-desktop@2x.jpg");
+  background-size: 500px 556px;
+}
+
+.main-block__social {
+  list-style: none;
+  margin: auto 0 41px;
+  padding: 0;
+  text-align: right;
+}
+
+.main-block__social li {
+  margin: 15px 0 0;
+}
+
+.main-block__social a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: $desktop-width1 - 1) {
+  .main-block__inner {
+    //width: $desktop-width1;
+    padding: 30px 15px 51px;
+  }
+}
