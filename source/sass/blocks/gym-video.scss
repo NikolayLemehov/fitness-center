@@ -1,4 +1,5 @@
 .gym-video {
+  position: absolute; // дублирование для наглядности
   width: 364px;
   height: 228px;
   background: url("#{$prefix-css-img}gym-video-desktop@1x.jpg") no-repeat 0 0;
@@ -23,7 +24,8 @@
   transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
-  background: url("#{$prefix-css-img}video-btn.svg") no-repeat 0 0;
+  padding: 0;
+  background: url("#{$prefix-css-img}video-btn-desktop.svg") no-repeat 0 0;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -34,5 +36,22 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (max-width: $desktop-container-width - 1) {
+  .gym-video {
+    width: 266px;
+    height: 167px;
+    background: url("#{$prefix-css-img}gym-video-tablet@1x.jpg") no-repeat 0 0;
+
+    @include bg-retina("gym-video-tablet@2x.jpg");
+    background-size: 266px 167px;
+  }
+
+  .gym-video button {
+    width: 74px;
+    height: 74px;
+    background-image: url("#{$prefix-css-img}video-btn-tablet.svg");
   }
 }
