@@ -1,0 +1,81 @@
+.offer {
+  width: 360px;
+  height: 448px;
+  padding: 63px 0 0;
+  background: #ffffff;
+  text-align: center;
+
+  &:hover {
+    background: #ffffff url("#{$prefix-css-img}frame-bg.svg") no-repeat 0 0;
+    background-size: cover;
+  }
+}
+
+.offer h3 {
+  margin: 0 0 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+  color: $color-dark-text;
+}
+
+.offer__order {
+  margin: 0 0 65px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #495a7d;
+}
+
+.offer__price {
+  margin: 0 0 34px;
+  padding: 0 44px 0 0;
+  color: #103aae;
+}
+
+.offer__price span {
+  position: relative;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 150%;
+  text-shadow: 3px 3px 0 $color-dark-text;
+
+  &::after {
+    $width: 30px;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate($width + 15px, -50%);
+    width: $width;
+    height: 42px;
+    background: url("#{$prefix-css-img}ruble.svg") no-repeat 0 0;
+  }
+}
+
+.offer__btn a {
+  display: block;
+  width: 208px;
+  height: 66px;
+  margin: 0 auto;
+  padding: 26px 15px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-dark-text;
+  box-shadow: inset 0 0 0 2px $color-dark-text;
+
+  &:hover {
+    color: #ffffff;
+    box-shadow: none;
+    background: url("#{$prefix-css-img}btn-bg.svg") no-repeat 0 0;
+    background-size: cover;
+  }
+}

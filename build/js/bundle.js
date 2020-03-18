@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _season_tickets__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./season-tickets */ \"./js/season-tickets.js\");\n\nvar seasonTickets = new _season_tickets__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\nseasonTickets.active();\n\n//# sourceURL=webpack:///./js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _season_tickets__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./season-tickets */ \"./js/season-tickets.js\");\n/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils */ \"./js/utils.js\");\n\n\nObject(_utils__WEBPACK_IMPORTED_MODULE_1__[\"activeForEeachNodeListForIE\"])();\nvar seasonTickets = new _season_tickets__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\nseasonTickets.active();\n\n//# sourceURL=webpack:///./js/main.js?");
 
 /***/ }),
 
@@ -107,6 +107,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sea
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return SeasonTickets; });\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nvar SeasonTickets =\n/*#__PURE__*/\nfunction () {\n  function SeasonTickets() {\n    _classCallCheck(this, SeasonTickets);\n\n    this.tabs = document.querySelectorAll(\".season-tickets__tabs-item > button\");\n    this.isAllExisting = this.tabs.length > 0;\n  }\n\n  _createClass(SeasonTickets, [{\n    key: \"active\",\n    value: function active() {\n      var _this = this;\n\n      if (!this.isAllExisting) {\n        return;\n      }\n\n      this.tabs.forEach(function (tab) {\n        tab.addEventListener(\"click\", function (evt) {\n          evt.preventDefault();\n\n          if (tab.parentElement.classList.contains(\"season-tickets__tabs-item--active\")) {\n            return;\n          }\n\n          _this._onViewChange();\n\n          tab.parentElement.classList.add(\"season-tickets__tabs-item--active\");\n        });\n      });\n    }\n  }, {\n    key: \"_onViewChange\",\n    value: function _onViewChange() {\n      this.tabs.forEach(function (tab) {\n        if (tab.parentElement.classList.contains(\"season-tickets__tabs-item--active\")) {\n          tab.parentElement.classList.remove(\"season-tickets__tabs-item--active\");\n        }\n      });\n    }\n  }]);\n\n  return SeasonTickets;\n}();\n\n\n\n//# sourceURL=webpack:///./js/season-tickets.js?");
+
+/***/ }),
+
+/***/ "./js/utils.js":
+/*!*********************!*\
+  !*** ./js/utils.js ***!
+  \*********************/
+/*! exports provided: activeForEeachNodeListForIE */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"activeForEeachNodeListForIE\", function() { return activeForEeachNodeListForIE; });\nvar activeForEeachNodeListForIE = function activeForEeachNodeListForIE() {\n  if (typeof NodeList.prototype.forEach !== \"function\") {\n    NodeList.prototype.forEach = Array.prototype.forEach;\n  }\n};\n\n\n\n//# sourceURL=webpack:///./js/utils.js?");
 
 /***/ })
 

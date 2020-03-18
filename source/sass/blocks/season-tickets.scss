@@ -3,9 +3,9 @@
 }
 
 .season-tickets__inner {
-  width: $desktop-container-width;
+  width: $desktop-container-width - 40px;
   margin: 0 auto;
-  padding: 118px 0 0;
+  padding: 118px 0 50px;
 }
 
 .season-tickets__inner h2 {
@@ -22,22 +22,12 @@
 
 .season-tickets__tabs {
   list-style: none;
-  position: relative;
   display: flex;
   justify-content: space-between;
   width: 341px;
   margin: 0 auto;
   padding: 0;
-}
-
-.season-tickets__tabs::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 2px;
-  background-color: rgba(120, 120, 120, 0.2);
+  box-shadow: inset 0 -2px 0 0 rgba(120, 120, 120, 0.2);
 }
 
 .season-tickets__tabs-item button {
@@ -61,6 +51,8 @@
   &:active {
     color: rgba(16, 38, 84, 0.15);
   }
+
+  @include fix-ie-btn-text();
 }
 
 .season-tickets__tabs-item--active button {
@@ -84,4 +76,26 @@
   right: 0;
   height: 2px;
   background-color: #d10a42;
+}
+
+.season-tickets__offers {
+  list-style: none;
+  margin: 0;
+  padding: 38px 0 0;
+}
+
+.season-tickets__offers-item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.season-tickets__tab-set {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }

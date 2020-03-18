@@ -4,6 +4,18 @@
   }
 }
 
+@mixin fix-ie-btn-text() {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    & > span,
+    &:active span,
+    &:focus span {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
 @mixin visually-hidden {
   position: absolute;
   width: 1px;
