@@ -55,3 +55,20 @@
     background-image: url("#{$prefix-css-img}video-btn-tablet.svg");
   }
 }
+
+@media (max-width: $tablet-width - 1) {
+  .gym-video {
+    width: 320px;
+    height: 167px;
+    background: url("#{$prefix-css-img}gym-video-mobile@1x.jpg") no-repeat 0 0;
+
+    @include bg-retina("gym-video-mobile@2x.jpg");
+    background-size: 320px 167px;
+  }
+
+  .gym-video button {
+    width: 73px;
+    height: 73px;
+    background-image: url("#{$prefix-css-img}video-btn-mobile.svg");
+  }
+}
