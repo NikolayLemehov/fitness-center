@@ -52,10 +52,28 @@
   color: rgba(16, 38, 84, 0.5);
   background-color: transparent;
   border: none;
+
+  &:hover {
+    cursor: pointer;
+    color: rgba(16, 38, 84, 0.3);
+  }
+
+  &:active {
+    color: rgba(16, 38, 84, 0.15);
+  }
 }
 
 .season-tickets__tabs-item--active button {
   color: $color-dark-text;
+
+  &:hover {
+    cursor: auto;
+    color: $color-dark-text;
+  }
+
+  &:active {
+    color: $color-dark-text;
+  }
 }
 
 .season-tickets__tabs-item--active button::before {
