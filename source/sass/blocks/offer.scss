@@ -7,7 +7,7 @@
   text-align: center;
 
   &:hover {
-    background: #ffffff url("#{$prefix-css-img}frame-bg.svg") no-repeat 0 0;
+    background: #ffffff url("#{$prefix-css-img}frame-bg-desktop.svg") no-repeat 0 0;
     background-size: cover;
   }
 }
@@ -91,5 +91,17 @@
     box-shadow: none;
     background: url("#{$prefix-css-img}btn-bg.svg") no-repeat 0 0;
     background-size: cover;
+  }
+}
+
+@media (max-width: $desktop-container-width - 1) {
+  .offer {
+    width: 442px;
+    margin: 0 auto 40px;
+
+    &:hover {
+      background: #ffffff url("#{$prefix-css-img}frame-bg-tablet.svg") no-repeat 0 0;
+      background-size: 442px 448px;
+    }
   }
 }

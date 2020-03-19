@@ -113,3 +113,44 @@
   margin: 0;
   padding: 0;
 }
+
+@media (max-width: $desktop-container-width - 1) {
+  .season-tickets__bg {
+    left: calc(50% + 249px);
+    top: auto;
+    bottom: -125px;
+    width: 423px;
+    height: 444px;
+    background: url("#{$prefix-css-img}sinker-tablet@1x.png") no-repeat center 0;
+
+    @include bg-retina("sinker-tablet@2x.png");
+    background-size: 423px 444px;
+  }
+
+  .season-tickets__inner {
+    width: $tablet-container-width - 40px;
+    padding: 99px 0 60px;
+  }
+
+  .season-tickets__inner h2 {
+    margin: 0 0 30px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .season-tickets__tabs {
+    width: 332px;
+  }
+
+  .season-tickets__tabs-item button {
+    font-size: 18px;
+  }
+
+  .season-tickets__tab-set {
+    display: block;
+  }
+
+  .season-tickets__offers {
+    padding: 44px 0 0;
+  }
+}
