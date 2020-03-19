@@ -1,11 +1,25 @@
 .season-tickets {
+  position: relative;
   background: #f8f9fc;
+}
+
+.season-tickets__bg {
+  position: absolute;
+  left: calc(50% + 631px);
+  top: 507px;
+  transform: translateX(-50%);
+  width: 470px;
+  height: 494px;
+  background: url("#{$prefix-css-img}sinker-desktop@1x.png") no-repeat center 0;
+
+  @include bg-retina("sinker-desktop@2x.png");
+  background-size: 470px 494px;
 }
 
 .season-tickets__inner {
   width: $desktop-container-width - 40px;
   margin: 0 auto;
-  padding: 118px 0 50px;
+  padding: 118px 0 120px;
 }
 
 .season-tickets__inner h2 {

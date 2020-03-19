@@ -331,13 +331,6 @@ html {
           box-sizing: border-box; }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   min-width: 320px;
   margin: 0;
   padding: 0;
@@ -367,6 +360,9 @@ input[type="radio"].visually-hidden {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
+
+.page-main {
+  overflow: hidden; }
 
 .main-block {
   display: -webkit-box;
@@ -814,12 +810,27 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/video-btn-mobile.svg"); } }
 
 .season-tickets {
+  position: relative;
   background: #f8f9fc; }
+
+.season-tickets__bg {
+  position: absolute;
+  left: calc(50% + 631px);
+  top: 507px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 470px;
+  height: 494px;
+  background: url("../img/sinker-desktop@1x.png") no-repeat center 0;
+  background-size: 470px 494px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .season-tickets__bg {
+      background-image: url("../img/sinker-desktop@2x.png"); } }
 
 .season-tickets__inner {
   width: 1160px;
   margin: 0 auto;
-  padding: 118px 0 50px; }
+  padding: 118px 0 120px; }
 
 .season-tickets__inner h2 {
   margin: 0 0 35px;
@@ -910,6 +921,7 @@ input[type="radio"].visually-hidden {
   padding: 0; }
 
 .offer {
+  position: relative;
   width: 360px;
   height: 448px;
   padding: 63px 0 0;
@@ -928,7 +940,7 @@ input[type="radio"].visually-hidden {
   color: #102654; }
 
 .offer__order {
-  margin: 0 0 65px;
+  margin: 0 0 98px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -936,18 +948,20 @@ input[type="radio"].visually-hidden {
   color: #495a7d; }
 
 .offer__price {
-  margin: 0 0 34px;
-  padding: 0 44px 0 0;
-  color: #103aae; }
-
-.offer__price span {
   position: relative;
+  z-index: 1;
+  margin: 0 0 51px;
+  padding: 0 44px 0 0;
   font-style: normal;
   font-weight: bold;
-  font-size: 60px;
   line-height: 150%;
-  text-shadow: 3px 3px 0 #102654; }
-  .offer__price span::after {
+  color: #103aae; }
+
+.offer__price-main {
+  position: relative;
+  z-index: 1;
+  font-size: 60px; }
+  .offer__price-main::after {
     content: "";
     position: absolute;
     right: 0;
@@ -957,6 +971,16 @@ input[type="radio"].visually-hidden {
     width: 30px;
     height: 42px;
     background: url("../img/ruble.svg") no-repeat 0 0; }
+
+.offer__price-shadow {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%, -24px);
+          transform: translate(-50%, -24px);
+  font-size: 100px;
+  color: #e8e8e8;
+  opacity: 0.48; }
 
 .offer__btn a {
   display: block;

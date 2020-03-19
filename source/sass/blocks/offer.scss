@@ -1,4 +1,5 @@
 .offer {
+  position: relative;
   width: 360px;
   height: 448px;
   padding: 63px 0 0;
@@ -21,7 +22,7 @@
 }
 
 .offer__order {
-  margin: 0 0 65px;
+  margin: 0 0 98px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -30,18 +31,20 @@
 }
 
 .offer__price {
-  margin: 0 0 34px;
+  position: relative;
+  z-index: 1;
+  margin: 0 0 51px;
   padding: 0 44px 0 0;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 150%;
   color: #103aae;
 }
 
-.offer__price span {
+.offer__price-main {
   position: relative;
-  font-style: normal;
-  font-weight: bold;
+  z-index: 1;
   font-size: 60px;
-  line-height: 150%;
-  text-shadow: 3px 3px 0 $color-dark-text;
 
   &::after {
     $width: 30px;
@@ -54,6 +57,16 @@
     height: 42px;
     background: url("#{$prefix-css-img}ruble.svg") no-repeat 0 0;
   }
+}
+
+.offer__price-shadow {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -24px);
+  font-size: 100px;
+  color: #e8e8e8;
+  opacity: 0.48;
 }
 
 .offer__btn a {
