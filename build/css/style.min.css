@@ -998,7 +998,7 @@ input[type="radio"].visually-hidden {
   color: #102654;
   -webkit-box-shadow: inset 0 0 0 2px #102654;
           box-shadow: inset 0 0 0 2px #102654; }
-  .offer__btn a:hover {
+  .offer__btn a:hover, .offer__btn a:focus {
     color: #ffffff;
     -webkit-box-shadow: none;
             box-shadow: none;
