@@ -182,3 +182,24 @@
     background-size: 386px 292px;
   }
 }
+
+@media (max-width: $tablet-width - 1) {
+  .promo__inner {
+    display: block;
+    width: $mobile-container-width;
+    padding: 70px 2px 0;
+  }
+
+  .promo__text {
+    padding: 48px 0 50px 45px;
+  }
+
+  .promo__image {
+    width: 290px;
+    height: 292px;
+    background: #000145 url("#{$prefix-css-img}super-games-mobile@1x.jpg") no-repeat center 0;
+
+    @include bg-retina("super-games-mobile@2x.jpg");
+    background-size: 290px 292px;
+  }
+}

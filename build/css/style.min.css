@@ -1250,4 +1250,20 @@ input[type="radio"].visually-hidden {
     .promo__image {
       background-image: url("../img/super-games-tablet@2x.jpg"); } }
 
+@media (max-width: 767px) {
+  .promo__inner {
+    display: block;
+    width: 294px;
+    padding: 70px 2px 0; }
+  .promo__text {
+    padding: 48px 0 50px 45px; }
+  .promo__image {
+    width: 290px;
+    height: 292px;
+    background: #000145 url("../img/super-games-mobile@1x.jpg") no-repeat center 0;
+    background-size: 290px 292px; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .promo__image {
+      background-image: url("../img/super-games-mobile@2x.jpg"); } }
+
 /*# sourceMappingURL=style.min.css.map */
