@@ -105,3 +105,49 @@
     }
   }
 }
+
+@media (max-width: $tablet-width - 1) {
+  .offer {
+    width: 290px;
+    height: 384px;
+    margin: 0 auto 35px;
+    padding: 51px 0 0;
+
+    &:hover {
+      background: #ffffff url("#{$prefix-css-img}frame-bg-mobile.svg") no-repeat 0 0;
+      background-size: 290px 384px;
+    }
+  }
+
+  .offer h3 {
+    font-size: 22px;
+    line-height: 110.16%;
+  }
+
+  .offer__order {
+    margin: 0 0 77px;
+  }
+
+  .offer__price {
+    margin: 0 0 42px;
+    padding: 0 30px 0 0;
+  }
+
+  .offer__price-main {
+    font-size: 48px;
+
+    &::after {
+      $width: 24px;
+      right: 4px;
+      transform: translate($width + 15px, -50%);
+      width: $width;
+      height: 33px;
+      background-size: $width 33px;
+    }
+  }
+
+  .offer__price-shadow {
+    top: 4px;
+    font-size: 80px;
+  }
+}

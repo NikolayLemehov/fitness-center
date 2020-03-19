@@ -154,3 +154,32 @@
     padding: 44px 0 0;
   }
 }
+
+@media (max-width: $tablet-width - 1) {
+  .season-tickets__bg {
+    background: none;
+  }
+
+  .season-tickets__inner {
+    width: $mobile-container-width;
+    padding: 70px 2px 35px;
+  }
+
+  .season-tickets__inner h2 {
+    margin: 0 0 23px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .season-tickets__tabs {
+    width: 100%;
+  }
+
+  .season-tickets__tabs-item button {
+    font-size: 16px;
+  }
+
+  .season-tickets__offers {
+    padding: 34px 0 0;
+  }
+}
