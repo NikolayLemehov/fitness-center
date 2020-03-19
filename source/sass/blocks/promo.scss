@@ -115,3 +115,70 @@
   @include bg-retina("super-games-desktop@2x.jpg");
   background-size: 660px 500px;
 }
+
+@media (max-width: $desktop-container-width - 1) {
+  .promo__inner {
+    width: $tablet-container-width;
+    padding: 100px 0 0;
+  }
+
+  .promo__text {
+    padding: 48px 0 0 46px;
+  }
+
+  .promo__top-container {
+    margin: 0;
+  }
+
+  .promo__inner h2 {
+    width: 145px;
+    font-size: 52px;
+    line-height: 52px;
+  }
+
+  .promo__date-title {
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .promo__date-day {
+    margin: 0 0 6px;
+  }
+
+  .promo__day-number {
+    margin: 0 4px 0 0;
+    font-size: 24px;
+  }
+
+  .promo__day-month {
+    margin: 2px 0 0;
+    font-size: 10px;
+  }
+
+  .promo__date-time time {
+    font-size: 24px;
+  }
+
+  .promo__text p {
+    margin: 0 0 29px;
+    font-size: 12px;
+  }
+
+  .promo__text a {
+    width: 204px;
+    min-height: 41px;
+    padding: 13px 15px 12px;
+    font-size: 10px;
+    line-height: 12px;
+    border: 2px solid #ffffff;
+  }
+
+  .promo__image {
+    width: 386px;
+    height: 292px;
+    background: #000145 url("#{$prefix-css-img}super-games-tablet@1x.jpg") no-repeat center 0;
+
+    @include bg-retina("super-games-tablet@2x.jpg");
+    background-size: 386px 292px;
+  }
+}
