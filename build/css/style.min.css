@@ -1096,7 +1096,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   width: 1160px;
   margin: 0 auto;
-  padding: 120px 0 0; }
+  padding: 120px 0 60px; }
 
 .promo__text {
   -webkit-box-flex: 1;
@@ -1265,5 +1265,176 @@ input[type="radio"].visually-hidden {
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .promo__image {
       background-image: url("../img/super-games-mobile@2x.jpg"); } }
+
+.trainers__inner {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 59px 0 250px; }
+
+.trainers__inner h2 {
+  width: 1160px;
+  margin: 0 auto 51px;
+  padding: 0 0 0 2px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654; }
+
+@media (max-width: 1319px) {
+  .trainers__inner {
+    width: calc(100vw - 40px); }
+  .trainers__inner h2 {
+    width: calc(((100vw - 40px) - 2 * 40px) - (((100vw - 40px) - 2 * 40px) / 4 - 260px)); } }
+
+@media (min-width: 0) {
+  .slider {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto; }
+  .slider__btn {
+    position: absolute;
+    top: 130px;
+    width: 18px;
+    height: 34px;
+    margin: 0;
+    padding: 0;
+    border: none; }
+    .slider__btn--left {
+      left: 3px;
+      background: url("../img/btn-left.svg") no-repeat 0 0; }
+    .slider__btn--right {
+      right: 3px;
+      background: url("../img/btn-right.svg") no-repeat 0 0; }
+  .slider__carousel {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1200px;
+    height: 294px;
+    margin: 0 auto;
+    overflow: hidden; }
+  .slider__list {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0; }
+  .slider__item {
+    width: 300px;
+    height: 294px; } }
+
+@media (min-width: 0) and (max-width: 1319px) {
+  .slider {
+    width: calc((100vw - 40px)); }
+  .slider__carousel {
+    width: calc(((100vw - 40px) - 2 * 40px)); }
+  .slider__item {
+    width: calc(((100vw - 40px) - 2 * 40px) / 4); } }
+
+.trainer-card {
+  position: relative;
+  width: 260px;
+  height: 294px;
+  margin: 0 auto;
+  padding: 249px 20px 0;
+  color: #ffffff; }
+  .trainer-card--1 {
+    background: #263b64 url("../img/trainer1-desktop@1x.jpg") no-repeat 0 0;
+    background-size: 260px 294px; }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .trainer-card--1 {
+        background-image: url("../img/trainer1-desktop@2x.jpg"); } }
+  .trainer-card--2 {
+    background: #263b64 url("../img/trainer2-desktop@1x.jpg") no-repeat 0 0;
+    background-size: 260px 294px; }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .trainer-card--2 {
+        background-image: url("../img/trainer2-desktop@2x.jpg"); } }
+  .trainer-card--3 {
+    background: #263b64 url("../img/trainer3-desktop@1x.jpg") no-repeat 0 0;
+    background-size: 260px 294px; }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .trainer-card--3 {
+        background-image: url("../img/trainer3-desktop@2x.jpg"); } }
+  .trainer-card--4 {
+    background: #263b64 url("../img/trainer4-desktop@1x.jpg") no-repeat 0 0;
+    background-size: 260px 294px; }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .trainer-card--4 {
+        background-image: url("../img/trainer4-desktop@2x.jpg"); } }
+  .trainer-card:hover {
+    padding: 56px 20px 0; }
+  .trainer-card:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background: rgba(16, 38, 84, 0.89); }
+
+.trainer-card__name {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 110%;
+  text-align: center; }
+
+.trainer-card__skill {
+  position: relative;
+  z-index: 1;
+  display: none;
+  margin: 0 0 33px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #b6bdcc;
+  text-align: center; }
+
+.trainer-card:hover .trainer-card__skill {
+  display: block; }
+
+.trainer-card__advantages {
+  list-style: none;
+  position: relative;
+  z-index: 1;
+  display: none;
+  margin: 0;
+  padding: 0 0 0 35px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%; }
+
+.trainer-card:hover .trainer-card__advantages {
+  display: block; }
+
+.trainer-card__advantages li {
+  position: relative;
+  margin: 0 0 13px;
+  padding: 0 0 0 16px; }
+
+.trainer-card__advantages li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 50%; }
 
 /*# sourceMappingURL=style.min.css.map */

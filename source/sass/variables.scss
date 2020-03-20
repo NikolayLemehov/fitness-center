@@ -8,3 +8,14 @@ $prefix-css-img: "../img/";
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 $color-dark-text: #102654;
+// trainer-card
+$trainer-card-width: 260px;
+$trainer-card-height: 294px;
+$trainer-card-between: 40px;
+// trainers
+$trainers_indent_for_scroll: 40px;
+$trainers-slider-carousel-width: $desktop-container-width;
+$trainers-slider-carousel-left-right-margin: 40px;
+$trainers-slider-width: $trainers-slider-carousel-width + 2 * $trainers-slider-carousel-left-right-margin;
+$trainers-slider-set-count: 4;
+$trainers-slider-item-width: $trainers-slider-carousel-width / $trainers-slider-set-count;

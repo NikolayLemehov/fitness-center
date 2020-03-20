@@ -1,0 +1,74 @@
+@media (min-width: 0) {
+  .slider {
+    position: relative;
+    width: $trainers-slider-width;
+    margin: 0 auto;
+    //background-color: hsla(200, 100%, 50%, 0.1);
+  }
+
+  .slider__btn {
+    position: absolute;
+    top: 130px;
+    width: 18px;
+    height: 34px;
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    &--left {
+      left: 3px;
+      background: url("#{$prefix-css-img}btn-left.svg") no-repeat 0 0;
+    }
+
+    &--right {
+      right: 3px;
+      background: url("#{$prefix-css-img}btn-right.svg") no-repeat 0 0;
+    }
+  }
+
+  .slider__carousel {
+    position: relative;
+    display: flex;
+    width: $trainers-slider-carousel-width;
+    height: 294px;
+    margin: 0 auto;
+    overflow: hidden;
+    //background-color: hsla(280, 100%, 50%, 0.1);
+  }
+
+  .slider__list {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slider__item {
+    width: $trainers-slider-item-width;
+    height: 294px;
+    //background-color: hsla(150, 100%, 50%, 0.1);
+  }
+
+  @media (max-width: $trainers-slider-width - 1 + $trainers_indent_for_scroll) {
+    $carousel_lrm: $trainers-slider-carousel-left-right-margin;
+    $slider_width: "(100vw - #{$trainers_indent_for_scroll})";
+    $set_count: $trainers-slider-set-count;
+    $carousel_width: "(#{$slider_width} - 2 * #{$carousel_lrm})";
+    $item_width: #{$carousel_width} / #{$set_count};
+
+    .slider {
+      width: calc(#{$slider_width});
+    }
+
+    .slider__carousel {
+      width: calc(#{$carousel_width});
+    }
+
+    .slider__item {
+      width: calc(#{$item_width});
+    }
+  }
+}

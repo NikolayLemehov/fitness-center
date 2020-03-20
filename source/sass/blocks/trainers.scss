@@ -1,0 +1,37 @@
+.trainers__inner {
+  width: $trainers-slider-width;
+  margin: 0 auto;
+  padding: 59px 0 250px;
+  //background-color: hsla(100, 100%, 50%, 0.1);
+}
+
+.trainers__inner h2 {
+  width: $desktop-container-width - 40px;
+  margin: 0 auto 51px;
+  padding: 0 0 0 2px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+}
+
+@media (max-width: $trainers-slider-width - 1 + $trainers_indent_for_scroll) {
+  $card_width: $trainer-card-width;
+  $carousel_lrm: $trainers-slider-carousel-left-right-margin;
+  $slider_width: "(100vw - #{$trainers_indent_for_scroll})";
+  $set_count: $trainers-slider-set-count;
+  $carousel_width: "(#{$slider_width} - 2 * #{$carousel_lrm})";
+  $item_width: #{$carousel_width} / #{$set_count};
+  $h2_width: "#{$carousel_width} - (#{$item_width} - #{$card_width})";
+
+  .trainers__inner {
+    width: calc(100vw - #{$trainers_indent_for_scroll});
+  }
+
+  .trainers__inner h2 {
+    width: calc(#{$h2_width});
+  }
+}

@@ -1,0 +1,114 @@
+.trainer-card {
+  position: relative;
+  width: 260px;
+  height: 294px;
+  margin: 0 auto;
+  padding: 249px 20px 0;
+  color: #ffffff;
+
+  &--1 {
+    background: #263b64 url("#{$prefix-css-img}trainer1-desktop@1x.jpg") no-repeat 0 0;
+
+    @include bg-retina("trainer1-desktop@2x.jpg");
+    background-size: 260px 294px;
+  }
+
+  &--2 {
+    background: #263b64 url("#{$prefix-css-img}trainer2-desktop@1x.jpg") no-repeat 0 0;
+
+    @include bg-retina("trainer2-desktop@2x.jpg");
+    background-size: 260px 294px;
+  }
+
+  &--3 {
+    background: #263b64 url("#{$prefix-css-img}trainer3-desktop@1x.jpg") no-repeat 0 0;
+
+    @include bg-retina("trainer3-desktop@2x.jpg");
+    background-size: 260px 294px;
+  }
+
+  &--4 {
+    background: #263b64 url("#{$prefix-css-img}trainer4-desktop@1x.jpg") no-repeat 0 0;
+
+    @include bg-retina("trainer4-desktop@2x.jpg");
+    background-size: 260px 294px;
+  }
+
+
+  &:hover {
+    padding: 56px 20px 0;
+  }
+
+  &:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background: rgba(16, 38, 84, 0.89);
+  }
+}
+
+.trainer-card__name {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 110%;
+  text-align: center;
+}
+
+.trainer-card__skill {
+  position: relative;
+  z-index: 1;
+  display: none;
+  margin: 0 0 33px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #b6bdcc;
+  text-align: center;
+}
+
+.trainer-card:hover .trainer-card__skill {
+  display: block;
+}
+
+.trainer-card__advantages {
+  list-style: none;
+  position: relative;
+  z-index: 1;
+  display: none;
+  margin: 0;
+  padding: 0 0 0 35px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.trainer-card:hover .trainer-card__advantages {
+  display: block;
+}
+
+.trainer-card__advantages li {
+  position: relative;
+  margin: 0 0 13px;
+  padding: 0 0 0 16px;
+}
+
+.trainer-card__advantages li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
