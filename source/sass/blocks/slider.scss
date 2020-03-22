@@ -69,6 +69,31 @@
     }
   }
 
+  @media (max-width: $desktop-container-width - 1) {
+    $carousel_lrm: 45px;
+    $slider_width: "(#{$tablet-container-width} + 8px)";
+    $set_count: 2;
+    $carousel_width: "(#{$slider_width} - 2 * #{$carousel_lrm})";
+    $item_width: #{$carousel_width} / #{$set_count};
+    $translate_x: "(#{$carousel_width} * -1)";
+
+    .slider {
+      width: calc(#{$slider_width});
+    }
+
+    .slider__carousel {
+      width: calc(#{$carousel_width});
+    }
+
+    .slider__list {
+      transform: translateX(calc(#{$translate_x}));
+    }
+
+    .slider__item {
+      width: calc(#{$item_width});
+    }
+  }
+
   @media (max-width: $tablet-width - 1) {
     $carousel_lrm: 30px;
     $slider_width: "(#{$mobile-container-width} + 0px)";
