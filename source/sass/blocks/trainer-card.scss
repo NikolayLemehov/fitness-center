@@ -34,7 +34,6 @@
     background-size: $trainer-card-width $trainer-card-height;
   }
 
-
   &:hover {
     padding: 56px 20px 0;
   }
@@ -145,6 +144,48 @@
 
       @include bg-retina("trainer4-tablet@2x.jpg");
       background-size: $trainer-card-width $trainer-card-height;
+    }
+  }
+}
+
+@media (max-width: $tablet-width - 1) {
+  $trainer-card-width: 226px;
+  $trainer-card-height: $trainer-card-mobile-height;
+
+  .trainer-card {
+    width: $trainer-card-width;
+    height: $trainer-card-height;
+
+    &--1 {
+      background: #263b64 url("#{$prefix-css-img}trainer1-mobile@1x.jpg") no-repeat 0 0;
+
+      @include bg-retina("trainer1-mobile@2x.jpg");
+      background-size: $trainer-card-width $trainer-card-height;
+    }
+
+    &--2 {
+      background: #263b64 url("#{$prefix-css-img}trainer2-mobile@1x.jpg") no-repeat 0 0;
+
+      @include bg-retina("trainer2-mobile@2x.jpg");
+      background-size: $trainer-card-width $trainer-card-height;
+    }
+
+    &--3 {
+      background: #263b64 url("#{$prefix-css-img}trainer3-mobile@1x.jpg") no-repeat 0 0;
+
+      @include bg-retina("trainer3-mobile@2x.jpg");
+      background-size: $trainer-card-width $trainer-card-height;
+    }
+
+    &--4 {
+      background: #263b64 url("#{$prefix-css-img}trainer4-mobile@1x.jpg") no-repeat 0 0;
+
+      @include bg-retina("trainer4-mobile@2x.jpg");
+      background-size: $trainer-card-width $trainer-card-height;
+    }
+
+    &:hover {
+      padding: 46px 0 0;
     }
   }
 }
