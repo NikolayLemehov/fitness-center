@@ -35,3 +35,21 @@
     width: calc(#{$h2_width});
   }
 }
+
+@media (max-width: $desktop-container-width - 1) {
+  $slider_width: "(#{$tablet-container-width} + 8px)";
+
+  .trainers__inner {
+    width: calc(#{$slider_width});
+    padding: 100px 0 100px;
+  }
+
+  .trainers__inner h2 {
+    width: 100%;
+    margin: 0 0 40px;
+    padding: 0;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+  }
+}

@@ -14,8 +14,8 @@ $trainer-card-height: 294px;
 $trainer-card-between: 40px;
 // trainers
 $trainers_indent_for_scroll: 40px;
-$trainers-slider-carousel-width: $desktop-container-width;
 $trainers-slider-carousel-left-right-margin: 40px;
-$trainers-slider-width: $trainers-slider-carousel-width + 2 * $trainers-slider-carousel-left-right-margin;
 $trainers-slider-set-count: 4;
+$trainers-slider-width: $desktop-container-width + 2 * $trainers-slider-carousel-left-right-margin;
+$trainers-slider-carousel-width: $trainers-slider-width - 2 * $trainers-slider-carousel-left-right-margin;
 $trainers-slider-item-width: $trainers-slider-carousel-width / $trainers-slider-set-count;
