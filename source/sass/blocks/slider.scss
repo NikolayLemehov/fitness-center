@@ -42,6 +42,7 @@
     display: flex;
     margin: 0;
     padding: 0;
+    transition: left 500ms;
   }
 
   .slider__item {
@@ -75,7 +76,6 @@
     $set_count: 2;
     $carousel_width: "(#{$slider_width} - 2 * #{$carousel_lrm})";
     $item_width: #{$carousel_width} / #{$set_count};
-    $translate_x: "(#{$carousel_width} * -1)";
 
     .slider {
       width: calc(#{$slider_width});
@@ -83,10 +83,6 @@
 
     .slider__carousel {
       width: calc(#{$carousel_width});
-    }
-
-    .slider__list {
-      transform: translateX(calc(#{$translate_x}));
     }
 
     .slider__item {
@@ -100,7 +96,6 @@
     $set_count: 1;
     $carousel_width: "(#{$slider_width} - 2 * #{$carousel_lrm})";
     $item_width: #{$carousel_width} / #{$set_count};
-    $translate_x: "(#{$carousel_width} * -2)";
 
     .slider {
       width: calc(#{$slider_width});
@@ -125,10 +120,6 @@
     .slider__carousel {
       width: calc(#{$carousel_width});
       height: $trainer-card-mobile-height;
-    }
-
-    .slider__list {
-      transform: translateX(calc(#{$translate_x}));
     }
 
     .slider__item {

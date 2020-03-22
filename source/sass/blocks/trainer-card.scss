@@ -119,16 +119,16 @@
     width: $trainer-card-width;
 
     &--1 {
-      background: #263b64 url("#{$prefix-css-img}trainer1-tablet@1x.jpg") no-repeat 0 0;
+      background: #263b64 url("#{$prefix-css-img}trainer1-desktop@1x.jpg") no-repeat 0 0;
 
-      @include bg-retina("trainer1-tablet@2x.jpg");
+      @include bg-retina("trainer1-desktop@2x.jpg");
       background-size: $trainer-card-width $trainer-card-height;
     }
 
     &--2 {
-      background: #263b64 url("#{$prefix-css-img}trainer2-tablet@1x.jpg") no-repeat 0 0;
+      background: #263b64 url("#{$prefix-css-img}trainer2-desktop@1x.jpg") no-repeat 0 0;
 
-      @include bg-retina("trainer2-tablet@2x.jpg");
+      @include bg-retina("trainer2-desktop@2x.jpg");
       background-size: $trainer-card-width $trainer-card-height;
     }
 
@@ -157,16 +157,16 @@
     height: $trainer-card-height;
 
     &--1 {
-      background: #263b64 url("#{$prefix-css-img}trainer1-mobile@1x.jpg") no-repeat 0 0;
+      background: #263b64 url("#{$prefix-css-img}trainer1-desktop@1x.jpg") no-repeat 0 0;
 
-      @include bg-retina("trainer1-mobile@2x.jpg");
+      @include bg-retina("trainer1-desktop@2x.jpg");
       background-size: $trainer-card-width $trainer-card-height;
     }
 
     &--2 {
-      background: #263b64 url("#{$prefix-css-img}trainer2-mobile@1x.jpg") no-repeat 0 0;
+      background: #263b64 url("#{$prefix-css-img}trainer2-desktop@1x.jpg") no-repeat 0 0;
 
-      @include bg-retina("trainer2-mobile@2x.jpg");
+      @include bg-retina("trainer2-desktop@2x.jpg");
       background-size: $trainer-card-width $trainer-card-height;
     }
 
@@ -178,9 +178,9 @@
     }
 
     &--4 {
-      background: #263b64 url("#{$prefix-css-img}trainer4-mobile@1x.jpg") no-repeat 0 0;
+      background: #263b64 url("#{$prefix-css-img}trainer4-desktop@1x.jpg") no-repeat 0 0;
 
-      @include bg-retina("trainer4-mobile@2x.jpg");
+      @include bg-retina("trainer4-desktop@2x.jpg");
       background-size: $trainer-card-width $trainer-card-height;
     }
 
