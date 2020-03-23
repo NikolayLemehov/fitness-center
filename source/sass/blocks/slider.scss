@@ -23,6 +23,15 @@
       right: 3px;
       background: url("#{$prefix-css-img}btn-right-desktop.svg") no-repeat 0 0;
     }
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .slider__carousel {
@@ -46,6 +55,7 @@
   }
 
   .slider__item {
+    flex-shrink: 0;
     width: $trainers-slider-item-width;
     height: $trainer-card-height;
   }

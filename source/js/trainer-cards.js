@@ -30,6 +30,7 @@ export default class TrainerCards {
 
     this.ul.style.left = `0px`;
     this._getParameter();
+    this.cardCount = this.liCollection.length;
 
     this.cardCollection.forEach((it, i) => {
       const setId = i % SLIDER_SET_COUNT + 1;
@@ -77,9 +78,7 @@ export default class TrainerCards {
 
   _getParameter() {
     const carouselWidth = this.carousel.offsetWidth;
-    const ulWidth = this.ul.offsetWidth;
     const liWidth = this.liCollection[0].offsetWidth;
-    this.cardCount = Math.round(ulWidth / liWidth);
     this.visibleCardCount = Math.round(carouselWidth / liWidth);
   }
 
