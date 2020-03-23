@@ -1,10 +1,14 @@
 import SeasonTickets from './season-tickets';
-import TrainerCards from './trainer-cards';
+import Trainers from './trainers';
+import Reviews from './reviews';
 import {activeForEeachNodeListForIE} from './utils';
 
 activeForEeachNodeListForIE();
 
 const seasonTickets = new SeasonTickets();
 seasonTickets.active();
-const trainerCard = new TrainerCards();
-trainerCard.active();
+
+const trainers = new Trainers();
+trainers.active();
+const reviews = new Reviews();
+reviews.active();

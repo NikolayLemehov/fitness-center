@@ -20,3 +20,17 @@ $trainers-slider-set-count: 4;
 $trainers-slider-width: $desktop-container-width + 2 * $trainers-slider-carousel-left-right-margin;
 $trainers-slider-carousel-width: $trainers-slider-width - 2 * $trainers-slider-carousel-left-right-margin;
 $trainers-slider-item-width: $trainers-slider-carousel-width / $trainers-slider-set-count;
+// review-card
+$review-card-width: 560px;
+$review-card-height: 242px;
+$review-card-tablet-width: 566px;
+$review-card-mobile-width: 226px;
+$review-card-mobile-height: 335px;
+$review-card-between: 40px;
+// reviews
+$reviews_indent_for_scroll: 40px;
+$reviews-slider-carousel-left-right-margin: 40px;
+$reviews-slider-set-count: 1;
+$reviews-slider-width: $review-card-width + $review-card-between + 2 * $reviews-slider-carousel-left-right-margin;
+$reviews-slider-carousel-width: $reviews-slider-width - 2 * $reviews-slider-carousel-left-right-margin;
+$reviews-slider-item-width: $reviews-slider-carousel-width / $reviews-slider-set-count;

@@ -4,19 +4,19 @@ const FIRST_CARD_NUMBER = 0;
 const names = [`Анна Павлова`, `Алексей Лавров`, `Александр Пашков`, `Мария Кетова`];
 const SLIDER_SET_COUNT = 4;
 
-export default class TrainerCards {
-  constructor() {
-    this.trainers = document.querySelector(`.trainers`);
-    this.slider = this.trainers.querySelector(`.slider`);
+export default class Slider {
+  constructor(section, cardCollection) {
+    this.section = section;
+    this.cardCollection = cardCollection;
+    this.slider = this.section.querySelector(`.slider`);
     this.carousel = this.slider.querySelector(`.slider__carousel`);
     this.ul = this.carousel.querySelector(`.slider__list`);
     this.liCollection = this.carousel.querySelectorAll(`.slider__item`);
     this.leftBtn = this.slider.querySelector(`.slider__btn--left`);
     this.rightBtn = this.slider.querySelector(`.slider__btn--right`);
 
-    this.cardCollection = this.trainers.querySelectorAll(`.trainer-card`);
     this.isAllExisting = this.cardCollection.length > 0 && this.cardCollection.length === this.liCollection.length
-      && this.trainers && this.slider && this.carousel && this.leftBtn && this.rightBtn;
+      && this.section && this.slider && this.carousel && this.leftBtn && this.rightBtn;
 
     this.cardCount = null;
     this.visibleCardCount = null;
