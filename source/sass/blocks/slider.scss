@@ -126,7 +126,7 @@
     $t_carousel_width: "(#{$t_slider_width} - 2 * #{$t_carousel_lrm})";
     $t_item_width: #{$t_carousel_width} / #{$t_set_count};
     $r_carousel_lrm: $reviews_slider_carousel_left_right_margin;
-    $r_slider_width: "(#{$review_card_tablet_width} + #{$review_card_between} + 2 * #{$reviews_slider_carousel_left_right_margin})";
+    $r_slider_width: "(#{$review_card_tablet_width} + #{$review_card_between} + 2 * #{$r_carousel_lrm})";
     $r_carousel_width: "(#{$r_slider_width} - 2 * #{$r_carousel_lrm})";
 
     .slider--trainers {
@@ -155,14 +155,18 @@
   }
 
   @media (max-width: $tablet-width - 1) {
-    $carousel_lrm: 30px;
-    $slider_width: "(#{$mobile-container-width} + 0px)";
-    $set_count: 1;
-    $carousel_width: "(#{$slider_width} - 2 * #{$carousel_lrm})";
-    $item_width: #{$carousel_width} / #{$set_count};
+    $t_carousel_lrm: 30px;
+    $t_slider_width: "(#{$mobile-container-width} + 0px)";
+    $t_carousel_width: "(#{$t_slider_width} - 2 * #{$t_carousel_lrm})";
+    $r_carousel_lrm: 1px;
+    $r_slider_width: "(#{$review_card_mobile_width} + #{$review_card_between})";
 
-    .slider {
-      width: calc(#{$slider_width});
+    .slider--trainers {
+      width: calc(#{$t_slider_width});
+    }
+
+    .slider--review {
+      width: calc(#{$r_slider_width});
     }
 
     .slider__btn {
@@ -181,14 +185,48 @@
       }
     }
 
-    .slider__carousel {
-      width: calc(#{$carousel_width});
+    .slider--trainers .slider__btn {
+      top: 130px;
+
+      &--left {
+        left: 1px;
+      }
+
+      &--right {
+        right: 1px;
+      }
+    }
+
+    .slider--review .slider__btn {
+      top: 197px;
+
+      &--left {
+        left: 7px;
+      }
+
+      &--right {
+        right: 7px;
+      }
+    }
+
+    .slider--trainers .slider__carousel {
+      width: calc(#{$t_carousel_width});
       height: $trainer-card-mobile-height;
     }
 
-    .slider__item {
-      width: calc(#{$item_width});
+    .slider--review .slider__carousel {
+      width: calc(#{$r_slider_width});
+      height: $review-card-mobile-height + 2 * $review-card-top-bottom-margin;
+    }
+
+    .slider--trainers .slider__item {
+      width: calc(#{$t_carousel_width});
       height: $trainer-card-mobile-height;
+    }
+
+    .slider--review .slider__item {
+      width: calc(#{$r_slider_width});
+      height: $review-card-mobile-height;
     }
   }
 }

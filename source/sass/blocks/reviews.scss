@@ -30,3 +30,18 @@
     line-height: 42px;
   }
 }
+
+@media (max-width: $tablet-width - 1) {
+  $r_slider_width: "(#{$review_card_mobile_width} + #{$review_card_between})";
+
+  .reviews__inner {
+    width: calc(#{$r_slider_width});
+    padding: 39px 0 250px;
+  }
+
+  .reviews__inner h2 {
+    margin: 0 auto 3px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
