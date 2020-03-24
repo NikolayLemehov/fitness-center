@@ -1,0 +1,48 @@
+.advantage {
+  display: flex;
+  width: 340px;
+}
+
+.advantage__indicator {
+  margin: 0 31px 0 0;
+}
+
+.advantage__number {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 71px;
+  line-height: 91%;
+}
+
+.advantage__unit {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #2e35ac;
+}
+
+.advantage__description {
+  padding: 0 7px 0 0;
+}
+
+.advantage__description h3 {
+  margin: 0 0 6px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 150%;
+  color: $color-dark-text;
+}
+
+.advantage__description p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -1px;
+  color: $color-dark-text;
+}

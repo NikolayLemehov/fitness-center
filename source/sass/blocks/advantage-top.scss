@@ -1,0 +1,37 @@
+.advantage-top {
+  $width: 240px;
+  position: absolute;
+  left: calc(50% - #{$width} / 2 + 1px);
+  top: 0;
+  width: $width;
+  height: 100%;
+  padding: 49px 25px 0;
+  color: #ffffff;
+  background: #1c3374;
+  text-align: center;
+}
+
+.advantage-top__number {
+  margin: 0;
+  padding: 0 5px 0 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 74px;
+  line-height: 110%;
+}
+
+.advantage-top__unit {
+  margin: 0 0 32px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 150%;
+}
+
+.advantage-top__description {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+}
