@@ -11,6 +11,7 @@
 
   .slider__btn {
     position: absolute;
+    z-index: 1;
     top: 130px;
     width: 18px;
     height: 34px;
@@ -39,7 +40,7 @@
   }
 
   .slider--review .slider__btn {
-    top: 104px;
+    top: 144px;
   }
 
   .slider__carousel {
@@ -53,7 +54,7 @@
 
   .slider--review .slider__carousel {
     width: $reviews-slider-carousel-width;
-    height: $review-card-height;
+    height: $review-card-height + 2 * $review-card-top-bottom-margin;
   }
 
   .slider__list {
@@ -65,6 +66,10 @@
     margin: 0;
     padding: 0;
     transition: left 500ms;
+  }
+
+  .slider--review .slider__list {
+    margin: $review-card-top-bottom-margin 0 0;
   }
 
   .slider__item {
