@@ -1,8 +1,11 @@
 @media (min-width: 0) {
   .slider {
     position: relative;
-    width: $trainers-slider-width;
     margin: 0 auto;
+  }
+
+  .slider--trainers {
+    width: $trainers-slider-width;
   }
 
   .slider--review {
@@ -12,7 +15,6 @@
   .slider__btn {
     position: absolute;
     z-index: 1;
-    top: 130px;
     width: 18px;
     height: 34px;
     margin: 0;
@@ -39,6 +41,10 @@
     }
   }
 
+  .slider--trainers .slider__btn {
+    top: 130px;
+  }
+
   .slider--review .slider__btn {
     top: 144px;
   }
@@ -46,10 +52,13 @@
   .slider__carousel {
     position: relative;
     display: flex;
-    width: $trainers-slider-carousel-width;
-    height: $trainer-card-height;
     margin: 0 auto;
     overflow: hidden;
+  }
+
+  .slider--trainers .slider__carousel {
+    width: $trainers-slider-carousel-width;
+    height: $trainer-card-height;
   }
 
   .slider--review .slider__carousel {
@@ -63,9 +72,12 @@
     left: 0;
     top: 0;
     display: flex;
-    margin: 0;
     padding: 0;
     transition: left 500ms;
+  }
+
+  .slider--trainers .slider__list {
+    margin: 0;
   }
 
   .slider--review .slider__list {
@@ -74,6 +86,9 @@
 
   .slider__item {
     flex-shrink: 0;
+  }
+
+  .slider--trainers .slider__item {
     width: $trainers-slider-item-width;
     height: $trainer-card-height;
   }
@@ -83,43 +98,59 @@
     height: $review-card-height;
   }
 
-  @media (max-width: $trainers-slider-width - 1 + $trainers_indent_for_scroll) {
+  @media (max-width: $trainers-slider-width - 1 + $trainers_indent_for_scroll)
+    and (min-width: $desktop-container-width) {
     $carousel_lrm: $trainers-slider-carousel-left-right-margin;
     $slider_width: "(100vw - #{$trainers_indent_for_scroll})";
     $set_count: $trainers-slider-set-count;
     $carousel_width: "(#{$slider_width} - 2 * #{$carousel_lrm})";
     $item_width: #{$carousel_width} / #{$set_count};
 
-    .slider {
+    .slider--trainers .slider {
       width: calc(#{$slider_width});
     }
 
-    .slider__carousel {
+    .slider--trainers .slider__carousel {
       width: calc(#{$carousel_width});
     }
 
-    .slider__item {
+    .slider--trainers .slider__item {
       width: calc(#{$item_width});
     }
   }
 
   @media (max-width: $desktop-container-width - 1) {
-    $carousel_lrm: 45px;
-    $slider_width: "(#{$tablet-container-width} + 8px)";
-    $set_count: 2;
-    $carousel_width: "(#{$slider_width} - 2 * #{$carousel_lrm})";
-    $item_width: #{$carousel_width} / #{$set_count};
+    $t_carousel_lrm: 45px;
+    $t_slider_width: "(#{$tablet-container-width} + 8px)";
+    $t_set_count: 2;
+    $t_carousel_width: "(#{$t_slider_width} - 2 * #{$t_carousel_lrm})";
+    $t_item_width: #{$t_carousel_width} / #{$t_set_count};
+    $r_carousel_lrm: $reviews_slider_carousel_left_right_margin;
+    $r_slider_width: "(#{$review_card_tablet_width} + #{$review_card_between} + 2 * #{$reviews_slider_carousel_left_right_margin})";
+    $r_carousel_width: "(#{$r_slider_width} - 2 * #{$r_carousel_lrm})";
 
-    .slider {
-      width: calc(#{$slider_width});
+    .slider--trainers {
+      width: calc(#{$t_slider_width});
     }
 
-    .slider__carousel {
-      width: calc(#{$carousel_width});
+    .slider--review {
+      width: calc(#{$r_slider_width});
     }
 
-    .slider__item {
-      width: calc(#{$item_width});
+    .slider--trainers .slider__carousel {
+      width: calc(#{$t_carousel_width});
+    }
+
+    .slider--review .slider__carousel {
+      width: calc(#{$r_carousel_width});
+    }
+
+    .slider--trainers .slider__item {
+      width: calc(#{$t_item_width});
+    }
+
+    .slider--review .slider__item {
+      width: calc(#{$r_carousel_width});
     }
   }
 
