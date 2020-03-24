@@ -46,3 +46,18 @@
   letter-spacing: -1px;
   color: $color-dark-text;
 }
+
+@media (max-width: $desktop-container-width - 1) {
+  .advantage {
+    width: 325px;
+  }
+
+  .advantage__number {
+    font-size: 58px;
+  }
+
+  .advantage__description h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+}

@@ -60,3 +60,35 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (max-width: $desktop-container-width - 1) {
+  .advantages__inner {
+    width: $tablet-container-width;
+    padding: 100px 0 94px;
+  }
+
+  .advantages__inner h2 {
+    margin: 0 0 44px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .advantages__container {
+    min-height: auto;
+    padding: 0;
+  }
+
+  .advantages__container::before,
+  .advantages__container::after {
+    content: none;
+  }
+
+  .advantages__top {
+    position: static;
+    margin: 0 0 44px;
+  }
+
+  .advantages__bottom {
+    position: static;
+  }
+}

@@ -35,3 +35,32 @@
   font-size: 16px;
   line-height: 150%;
 }
+
+@media (max-width: $desktop-container-width - 1) {
+  .advantage-top {
+    position: static;
+    align-self: center;
+    width: 442px;
+    min-height: 239px;
+    margin: 0 0 44px;
+    padding: 35px 25px 25px;
+  }
+
+  .advantage-top__number {
+    margin: 0 0 1px;
+    padding: 0 5px 0 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 74px;
+    line-height: 95%;
+  }
+
+  .advantage-top__unit {
+    margin: 0 0 14px;
+    font-size: 22px;
+  }
+
+  .advantage-top__description {
+    padding: 0 101px 0;
+  }
+}
