@@ -153,3 +153,33 @@
     line-height: 152.34%;
   }
 }
+
+@media (max-width: $tablet-width - 1) {
+  .contacts__inner {
+    width: $mobile-container-width;
+    padding: 69px 2px 0;
+  }
+
+  .contacts h2 {
+    margin: 0 0 35px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .contacts__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__inner-left::before {
+    content: none;
+  }
+
+  .contacts__inner-right {
+    padding: 0;
+  }
+
+  .contacts__item {
+    margin: 0 0 19px;
+  }
+}

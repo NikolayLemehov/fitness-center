@@ -116,3 +116,31 @@
     width: 100%;
   }
 }
+
+@media (max-width: $tablet-width - 1) {
+  .free-lesson__inner {
+    width: $mobile-container-width;
+    padding: 69px 2px 68px;
+  }
+
+  .free-lesson h2 {
+    margin: 0 0 40px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .free-lesson__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 4px;
+  }
+
+  .free-lesson__container label {
+    display: block;
+    margin: 0 0 35px;
+  }
+
+  .free-lesson__container input {
+    width: 100%;
+  }
+}
