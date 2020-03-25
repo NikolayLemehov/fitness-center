@@ -13,6 +13,37 @@
   font-weight: bold;
   font-size: 71px;
   line-height: 91%;
+  //background: linear-gradient(red, blue);
+  //-webkit-background-clip: text;
+  //-webkit-text-fill-color: transparent;
+
+  &--900 {
+    width: 102px;
+    height: 53px;
+    margin: 4px 0 6px 3px;
+    background: url("#{$prefix-css-img}number-900-desktop.svg") no-repeat 0 0;
+  }
+
+  &--350 {
+    width: 103px;
+    height: 53px;
+    margin: 4px 0 6px 3px;
+    background: url("#{$prefix-css-img}number-350-desktop.svg") no-repeat 0 0;
+  }
+
+  &--70 {
+    width: 67px;
+    height: 53px;
+    margin: 4px 0 6px 3px;
+    background: url("#{$prefix-css-img}number-70-desktop.svg") no-repeat 0 0;
+  }
+
+  &--5 {
+    width: 65px;
+    height: 52px;
+    margin: 4px 5px 6px 3px;
+    background: url("#{$prefix-css-img}number-5+-desktop.svg") no-repeat 0 0;
+  }
 }
 
 .advantage__unit {
@@ -53,7 +84,30 @@
   }
 
   .advantage__number {
-    font-size: 58px;
+    &--900 {
+      width: 84px;
+      height: 43px;
+      background: url("#{$prefix-css-img}number-900-tablet.svg") no-repeat 0 0;
+    }
+
+    &--350 {
+      width: 85px;
+      height: 43px;
+      background: url("#{$prefix-css-img}number-350-tablet.svg") no-repeat 0 0;
+    }
+
+    &--70 {
+      width: 55px;
+      height: 43px;
+      background: url("#{$prefix-css-img}number-70-tablet.svg") no-repeat 0 0;
+    }
+
+    &--5 {
+      width: 55px;
+      height: 43px;
+      margin: 4px 0 6px 3px;
+      background: url("#{$prefix-css-img}number-5+-tablet.svg") no-repeat 0 0;
+    }
   }
 
   .advantage__description h3 {
@@ -71,11 +125,39 @@
   }
 
   .advantage__indicator {
-    margin: 0 0 5px;
+    margin: 0 0 7px;
   }
 
   .advantage__description {
     padding: 0;
+  }
+
+  .advantage__number {
+    margin: 0 auto 5px;
+
+    &--900 {
+      width: 84px;
+      height: 43px;
+      background: url("#{$prefix-css-img}number-900-mobile.svg") no-repeat 0 0;
+    }
+
+    &--350 {
+      width: 85px;
+      height: 43px;
+      background: url("#{$prefix-css-img}number-350-mobile.svg") no-repeat 0 0;
+    }
+
+    &--70 {
+      width: 55px;
+      height: 43px;
+      background: url("#{$prefix-css-img}number-70-mobile.svg") no-repeat 0 0;
+    }
+
+    &--5 {
+      width: 53px;
+      height: 43px;
+      background: url("#{$prefix-css-img}number-5+-mobile.svg") no-repeat 0 0;
+    }
   }
 
   .advantage__description h3 {

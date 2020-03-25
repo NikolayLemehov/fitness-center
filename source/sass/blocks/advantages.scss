@@ -48,17 +48,21 @@
 }
 
 .advantages__top {
-  position: relative;
+  position: absolute;
+  left: 0;
   top: -7px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .advantages__bottom {
-  position: relative;
+  position: absolute;
+  left: 0;
   bottom: -7px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 @media (max-width: $desktop-container-width - 1) {
@@ -86,10 +90,12 @@
   .advantages__top {
     position: static;
     margin: 0 0 44px;
+    width: auto;
   }
 
   .advantages__bottom {
     position: static;
+    width: auto;
   }
 }
 
@@ -100,7 +106,7 @@
   }
 
   .advantages__inner h2 {
-    margin: 0 0 46px;
+    margin: 0 0 50px;
     font-size: 32px;
     line-height: 32px;
   }
