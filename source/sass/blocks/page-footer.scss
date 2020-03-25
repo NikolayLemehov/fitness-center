@@ -1,0 +1,100 @@
+.page-footer {
+  color: #ffffff;
+  background: #030a1a;
+}
+
+.page-footer__nav {
+  display: flex;
+  justify-content: space-between;
+  width: $desktop-container-width - 40px;
+  margin: 0 auto;
+  padding: 42px 0 38px;
+}
+
+.page-footer__logo {
+  margin: 2px 0 0;
+}
+
+.page-footer__logo a {
+  display: block;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #ffffff;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px -60px 0 0;
+  padding: 0;
+}
+
+.page-footer__menu li {
+  margin: 0 40px 0 0;
+}
+
+.page-footer__menu a {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #ffffff;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__social {
+  list-style: none;
+  display: flex;
+  margin: 0 -1px 0 0;
+  padding: 0;
+}
+
+.page-footer__social-item {
+  margin: 0 25px 0 0;
+
+  &--vk {
+    margin: 4px 25px 0 0;
+  }
+}
+
+.page-footer__social-item:last-child {
+  margin: 0;
+}
+
+.page-footer__social-item a {
+  display: block;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__social-item svg {
+  display: block;
+}

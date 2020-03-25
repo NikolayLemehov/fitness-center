@@ -1,14 +1,14 @@
 .double-container {
   display: flex;
   width: $desktop-container-width - 40px;
-  margin: 0 auto 100px;
+  margin: 0 auto;
 }
 
 .double-container__item {
   width: 50%;
 }
 
-@media (max-width: $desktop-container-width) {
+@media (max-width: $desktop-container-width - 1) {
   .double-container {
     display: block;
     width: auto;
