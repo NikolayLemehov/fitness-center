@@ -3,8 +3,10 @@ import Trainers from './trainers';
 import Reviews from './reviews';
 import FreeLesson from './free-lesson';
 import {activeForEeachNodeListForIE} from './utils';
+import {activeSmoothScroll} from './smooth-scroll';
 
 activeForEeachNodeListForIE();
+activeSmoothScroll();
 
 const seasonTickets = new SeasonTickets();
 seasonTickets.active();
