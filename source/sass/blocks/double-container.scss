@@ -6,12 +6,12 @@
 
 .double-container__item {
   width: 50%;
-
-  &--right {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-  }
+  //
+  //&--right {
+  //  position: relative;
+  //  display: flex;
+  //  justify-content: flex-end;
+  //}
 }
 
 .double-container__item--right::before {

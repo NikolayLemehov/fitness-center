@@ -557,21 +557,23 @@
       </section>
       <div class="double-container">
         <section class="double-container__item free-lesson">
-          <h2>Бесплатное занятие </h2>
-          <form action="#" method="get">
-            <div class="free-lesson__container">
-              <label>
-                <input type="text" placeholder="Имя" name="name">
-              </label>
-              <label>
-                <input type="text" placeholder="Телефон" name="phone">
-              </label>
-            </div>
-            <button type="submit">Отправить</button>
-          </form>
+          <div class="free-lesson__inner">
+            <h2>Бесплатное занятие </h2>
+            <form action="#" method="get">
+              <div class="free-lesson__container">
+                <label>
+                  <input type="text" placeholder="Имя" name="name">
+                </label>
+                <label>
+                  <input type="text" placeholder="Телефон" name="phone">
+                </label>
+              </div>
+              <button type="submit">Отправить</button>
+            </form>
+          </div>
         </section>
-        <div class="double-container__item double-container__item--right">
-          <section class="contacts">
+        <section class="double-container__item contacts">
+          <div class="contacts__inner">
             <h2>Контакты</h2>
             <div class="contacts__container">
               <div class="contacts__inner-left">
@@ -595,8 +597,8 @@
                 </div>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
     </main>
     <script src="js/bundle.min.js"></script>

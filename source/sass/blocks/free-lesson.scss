@@ -1,6 +1,5 @@
 .free-lesson {
   position: relative;
-  min-width: 420px;
   padding: 61px 0 69px;
   background-color: $color-dark-text;
   color: #ffffff;
@@ -14,6 +13,10 @@
   width: 100vw;
   height: 100%;
   background-color: $color-dark-text;
+}
+
+.free-lesson__inner {
+  min-width: 420px;
 }
 
 .free-lesson h2 {
