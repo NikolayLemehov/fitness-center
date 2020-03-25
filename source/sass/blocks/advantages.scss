@@ -92,3 +92,25 @@
     position: static;
   }
 }
+
+@media (max-width: $tablet-width - 1) {
+  .advantages__inner {
+    width: $mobile-container-width;
+    padding: 70px 0 24px;
+  }
+
+  .advantages__inner h2 {
+    margin: 0 0 46px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .advantages__top {
+    display: block;
+    margin: 0 0 4px;
+  }
+
+  .advantages__bottom {
+    display: block;
+  }
+}

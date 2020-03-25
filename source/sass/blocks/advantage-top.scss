@@ -64,3 +64,23 @@
     padding: 0 101px 0;
   }
 }
+
+@media (max-width: $tablet-width - 1) {
+  .advantage-top {
+    width: $mobile-width;
+    min-height: auto;
+    padding: 40px 0 43px;
+  }
+
+  .advantage-top__number {
+    margin: 0 0 -4px;
+  }
+
+  .advantage-top__unit {
+    margin: 0 0 9px;
+  }
+
+  .advantage-top__description {
+    padding: 0 65px 0;
+  }
+}

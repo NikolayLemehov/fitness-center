@@ -61,3 +61,28 @@
     font-size: 20px;
   }
 }
+
+@media (max-width: $tablet-width - 1) {
+  .advantage {
+    display: block;
+    width: auto;
+    margin: 0 0 39px;
+    text-align: center;
+  }
+
+  .advantage__indicator {
+    margin: 0 0 5px;
+  }
+
+  .advantage__description {
+    padding: 0;
+  }
+
+  .advantage__description h3 {
+    margin: 0 0 2px;
+  }
+
+  .advantage__description p {
+    padding: 0 34px 0;
+  }
+}
