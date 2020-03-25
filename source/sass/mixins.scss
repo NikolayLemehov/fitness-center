@@ -16,6 +16,24 @@
   }
 }
 
+@mixin form-field() {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+
+  &::placeholder {
+    color: #ffffff;
+  }
+
+  &:hover::placeholder {
+    opacity: 0.6;
+  }
+
+  &:focus::placeholder {
+    opacity: 0.6;
+  }
+}
+
 @mixin visually-hidden {
   position: absolute;
   width: 1px;

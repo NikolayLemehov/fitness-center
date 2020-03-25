@@ -1,0 +1,76 @@
+.free-lesson {
+  position: relative;
+  min-width: 420px;
+  padding: 61px 0 69px;
+  background-color: $color-dark-text;
+  color: #ffffff;
+}
+
+.free-lesson::before {
+  content: "";
+  position: absolute;
+  left: -100vw;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: $color-dark-text;
+}
+
+.free-lesson h2 {
+  margin: 0 0 36px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+}
+
+.free-lesson form {
+  width: 420px;
+}
+
+.free-lesson__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 28px;
+  padding: 0 10px 0 0;
+}
+
+.free-lesson__container input {
+  @include form-field();
+  width: 190px;
+  padding: 0 5px 5px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: $color-dark-text;
+  border: none;
+  border-bottom: 1px solid #74819c;
+}
+
+.free-lesson button {
+  width: 412px;
+  min-height: 55px;
+  padding: 16px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: $color-dark-text;
+  border: 3px solid #ffffff;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
