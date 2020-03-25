@@ -7,3 +7,14 @@
 .double-container__item {
   width: 50%;
 }
+
+@media (max-width: $desktop-container-width) {
+  .double-container {
+    display: block;
+    width: auto;
+  }
+
+  .double-container__item {
+    width: auto;
+  }
+}

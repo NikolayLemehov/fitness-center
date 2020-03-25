@@ -70,10 +70,49 @@
   border: 3px solid #ffffff;
 
   &:hover {
+    cursor: pointer;
     opacity: 0.6;
   }
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (max-width: $desktop-container-width - 1) {
+  .free-lesson {
+    padding: 0;
+  }
+
+  .free-lesson::before {
+    content: none;
+  }
+
+  .free-lesson__inner {
+    min-width: auto;
+    width: $tablet-container-width;
+    margin: 0 auto;
+    padding: 70px 118px 68px 88px;
+  }
+
+  .free-lesson h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .free-lesson form {
+    width: auto;
+  }
+
+  .free-lesson__container {
+    padding: 0;
+  }
+
+  .free-lesson__container input {
+    width: 206px;
+  }
+
+  .free-lesson button {
+    width: 100%;
   }
 }
