@@ -2,13 +2,14 @@
   position: relative;
   width: 360px;
   height: 448px;
-  padding: 63px 0 0;
-  background: #ffffff;
+  padding: 63px - 7px 0 0;
   text-align: center;
+  background: #ffffff;
+  border: 7px solid #ffffff;
 
   &:hover {
-    background: #ffffff url("#{$prefix-css-img}frame-bg-desktop.svg") no-repeat 0 0;
-    background-size: cover;
+    border: 7px solid;
+    border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%) 7;
   }
 }
 
@@ -98,11 +99,6 @@
   .offer {
     width: 442px;
     margin: 0 auto 40px;
-
-    &:hover {
-      background: #ffffff url("#{$prefix-css-img}frame-bg-tablet.svg") no-repeat 0 0;
-      background-size: 442px 448px;
-    }
   }
 }
 
@@ -111,12 +107,7 @@
     width: 290px;
     height: 384px;
     margin: 0 auto 35px;
-    padding: 51px 0 0;
-
-    &:hover {
-      background: #ffffff url("#{$prefix-css-img}frame-bg-mobile.svg") no-repeat 0 0;
-      background-size: 290px 384px;
-    }
+    padding: 51px - 7px 0 0;
   }
 
   .offer h3 {

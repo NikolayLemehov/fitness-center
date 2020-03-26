@@ -96,6 +96,7 @@
   }
 
   .free-lesson h2 {
+    margin: 0 0 38px;
     font-size: 42px;
     line-height: 42px;
   }
@@ -132,15 +133,12 @@
   .free-lesson__container {
     display: flex;
     flex-direction: column;
-    margin: 0 0 4px;
-  }
-
-  .free-lesson__container label {
-    display: block;
-    margin: 0 0 35px;
+    margin: 0;
   }
 
   .free-lesson__container input {
+    display: block;
     width: 100%;
+    margin: 0 0 39px;
   }
 }
