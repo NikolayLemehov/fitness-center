@@ -89,7 +89,7 @@
   &:focus {
     color: #ffffff;
     box-shadow: none;
-    background: url("#{$prefix-css-img}btn-bg.svg") no-repeat 0 0;
+    background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
     background-size: cover;
   }
 }
