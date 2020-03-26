@@ -577,12 +577,10 @@
             <h2>Бесплатное занятие </h2>
             <form action="#" method="get">
               <div class="free-lesson__container">
-                <label>
-                  <input type="text" placeholder="Имя" name="name" required="">
-                </label>
-                <label>
-                  <input type="text" placeholder="Телефон" name="phone" maxlength="14" required="">
-                </label>
+                <label class="visually-hidden" for="field-name">Имя</label>
+                <input type="text" id="field-name" placeholder="Имя" name="name" required="">
+                <label class="visually-hidden" for="field-phone">Телефон</label>
+                <input type="text" id="field-phone" placeholder="Телефон" name="phone" maxlength="14" required="">
               </div>
               <button type="submit">Отправить</button>
             </form>
