@@ -106,7 +106,7 @@
     $carousel_width: "(#{$slider_width} - 2 * #{$carousel_lrm})";
     $item_width: #{$carousel_width} / #{$set_count};
 
-    .slider--trainers .slider {
+    .slider--trainers.slider {
       width: calc(#{$slider_width});
     }
 
