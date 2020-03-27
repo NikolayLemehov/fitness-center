@@ -191,12 +191,15 @@
 
   .action__other {
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
+    margin: 0 0 -30px;
   }
 
   .action__other li {
     width: 324px;
     height: 211px;
+    margin: 0 0 30px;
     padding: 26px 35px 35px;
     background: url("#{$prefix-css-img}action-bg-tablet.svg") no-repeat 0 0;
     background-size: 324px 211px;
@@ -246,6 +249,7 @@
   .action__other {
     flex-direction: column;
     align-items: center;
+    margin: 0;
   }
 
   .action__other li {
