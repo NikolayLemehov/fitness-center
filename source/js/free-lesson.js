@@ -1,3 +1,5 @@
+const $ = global.$;
+
 export default class FreeLesson {
   constructor() {
     this.section = document.querySelector(`.free-lesson`);
@@ -12,7 +14,9 @@ export default class FreeLesson {
     if (!this.isAllExisting) {
       return;
     }
-
+    $(document).ready(function () {
+      $(`.free-lesson input[name="phone"]`).mask(`+7(000)0000000`);
+    });
     this.btn.addEventListener(`click`, (evt) => {
       this._validatePhone();
       if (this.form.checkValidity()) {

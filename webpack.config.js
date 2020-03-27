@@ -4,9 +4,12 @@ const {CleanWebpackPlugin} = require(`clean-webpack-plugin`);
 module.exports = {
   context: path.resolve(__dirname, `source`),
   mode: `development`, // Режим сборки
-  entry: `./js/main.js`, // Точка входа приложения
+  entry: {
+    main: `./js/main.js`,
+    vendor: `./js/vendor.js`,
+  }, // Точка входа приложения
   output: {// Настройка выходного файла
-    filename: `bundle.js`,
+    filename: `[name].js`,
     path: path.join(__dirname, `build/js`),
   },
   plugins: [
@@ -20,7 +23,7 @@ module.exports = {
         loader: {
           loader: `babel-loader`,
           options: {
-            presets: [`@babel/preset-env`]
+            presets: [`@babel/preset-env`],
           },
         },
       },

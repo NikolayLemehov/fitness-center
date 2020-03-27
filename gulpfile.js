@@ -99,7 +99,7 @@ gulp.task(`javascript`, function () {
       .pipe(webpackStream(webpackConfig))
       .pipe(gulp.dest(`build/js`))
       .pipe(uglify())
-      .pipe(rename(`bundle.min.js`))
+      // .pipe(rename(`bundle.min.js`))
       .pipe(gulp.dest(`build/js`));
 });
 
