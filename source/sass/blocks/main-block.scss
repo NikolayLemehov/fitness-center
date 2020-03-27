@@ -2,15 +2,15 @@
   display: flex;
   justify-content: center;
   color: #ffffff;
+  background: url("#{$prefix-css-img}main-block-bg-desktop@1x.jpg") no-repeat center 0;
+
+  @include bg-retina("main-block-bg-desktop@2x.jpg");
+  background-size: cover;
 }
 
 .main-block__inner {
   width: $desktop-width;
   padding: 30px 0 51px;
-  background: url("#{$prefix-css-img}main-block-bg-desktop@1x.jpg") no-repeat center 0;
-
-  @include bg-retina("main-block-bg-desktop@2x.jpg");
-  background-size: cover;
 }
 
 .main-block__top {
