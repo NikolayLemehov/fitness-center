@@ -26,6 +26,7 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 307px;
+  //padding: 0 0 0 27px;
   padding: 0 0 0 27px;
 
   &::before {
@@ -54,6 +55,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding: 0 0 0 27px;
 }
 
 .advantages__bottom {
@@ -63,6 +65,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding: 0 0 0 27px;
 }
 
 @media (max-width: $desktop-container-width - 1) {
@@ -91,11 +94,13 @@
     position: static;
     margin: 0 0 44px;
     width: auto;
+    padding: 0;
   }
 
   .advantages__bottom {
     position: static;
     width: auto;
+    padding: 0;
   }
 }
 
