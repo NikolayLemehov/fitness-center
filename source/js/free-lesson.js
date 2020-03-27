@@ -5,7 +5,7 @@ export default class FreeLesson {
     this.section = document.querySelector(`.free-lesson`);
     this.form = this.section.querySelector(`form`);
     this.name = this.form.querySelector(`input[name="name"]`);
-    this.phone = this.form.querySelector(`input[name="phone"]`);
+    this.phone = $(`.free-lesson input[name="phone"]`);
     this.btn = this.form.querySelector(`button[type="submit"]`);
     this.isAllExisting = this.section && this.form && this.name && this.phone && this.btn;
   }
@@ -14,9 +14,7 @@ export default class FreeLesson {
     if (!this.isAllExisting) {
       return;
     }
-    $(document).ready(function () {
-      $(`.free-lesson input[name="phone"]`).mask(`+7(000)0000000`);
-    });
+    this.phone.mask(`+7(000)0000000`);
     this.btn.addEventListener(`click`, (evt) => {
       this._validatePhone();
       if (this.form.checkValidity()) {
