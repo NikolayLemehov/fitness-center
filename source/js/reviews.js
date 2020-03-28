@@ -1,18 +1,18 @@
-import Slider from './slider';
+const $ = global.$;
 
 export default class Reviews {
   constructor() {
     this.section = document.querySelector(`.reviews`);
-    this.cardCollection = this.section.querySelectorAll(`.review-card`);
-    this.isAllExisting = !!this.section;
-    this.slider = null;
+    this.cardCollection = this.section ? this.section.querySelectorAll(`.review-card`) : null;
+    this.$slider = $(`.slider2--reviews`);
+    this.cardCount = this.cardCollection ? this.cardCollection.length : null;
+    this.isAllExisting = this.section && this.$slider && this.cardCount > 0;
   }
 
   active() {
     if (!this.isAllExisting) {
       return;
     }
-    this.slider = new Slider(this.section, this.cardCollection);
-    this.slider.active();
+    this.$slider.slick();
   }
 }

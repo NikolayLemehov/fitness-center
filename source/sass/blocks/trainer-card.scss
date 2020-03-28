@@ -1,6 +1,6 @@
 .trainer-card {
   position: relative;
-  width: $trainer-card-width;
+  max-width: $trainer-card-width;
   height: $trainer-card-height;
   margin: 0 auto;
   padding: 249px 20px 0;
@@ -116,7 +116,7 @@
   $trainer-card-width: 268px;
 
   .trainer-card {
-    width: $trainer-card-width;
+    max-width: $trainer-card-width;
 
     &--1 {
       background: #263b64 url("#{$prefix-css-img}trainer1-desktop@1x.jpg") no-repeat 0 0;
@@ -153,7 +153,7 @@
   $trainer-card-height: $trainer-card-mobile-height;
 
   .trainer-card {
-    width: $trainer-card-width;
+    max-width: $trainer-card-width;
     height: $trainer-card-height;
 
     &--1 {

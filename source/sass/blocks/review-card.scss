@@ -1,9 +1,7 @@
 .review-card {
   position: relative;
-  width: $review-card-width;
-  height: $review-card-height;
-  margin: 0 auto;
-  padding: 54px 59px 0 170px;
+  margin: 40px;
+  padding: 54px 59px 58px 170px;
   color: #ffffff;
   background: #1c3374;
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
@@ -40,8 +38,7 @@
 
 @media (max-width: $desktop-container-width - 1) {
   .review-card {
-    width: $review_card_tablet_width;
-    padding: 54px 61px 0 174px;
+    padding: 54px 61px 58px 174px;
   }
 
   .review-card__image {
