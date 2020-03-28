@@ -2,7 +2,7 @@
   $review_margin: 40px;
   $trainer_margin: 20px;
 
-  .slider2 {
+  .slider {
     display: flex;
 
     &--trainers {
@@ -16,13 +16,13 @@
     }
   }
 
-  .slider2__item > * {
+  .slider__item > * {
     flex-grow: 1;
   }
 
   @media (max-width: $trainers-slider-width - 1 + $trainers_indent_for_scroll)
     and (min-width: $desktop-container-width) {
-    .slider2--trainers {
+    .slider--trainers {
       $max_view: $trainers-slider-width - 1 + $trainers_indent_for_scroll;
       $min_view: $desktop-container-width;
       $t_m_max: $trainer_margin;
@@ -37,7 +37,7 @@
   }
 
   @media (max-width: $desktop-container-width - 1) {
-    .slider2 {
+    .slider {
       &--trainers {
         $t_set_count: 2;
         $trainer-card-width: 268px;
@@ -53,7 +53,7 @@
   }
 
   @media (max-width: $tablet-width - 1) {
-    .slider2 {
+    .slider {
       &--trainers {
         $trainer-card-width: 226px;
         $trainer_margin: 15px;

@@ -8,7 +8,7 @@ export default class Trainers {
   constructor() {
     this.section = document.querySelector(`.trainers`);
     this.cardCollection = this.section ? this.section.querySelectorAll(`.trainer-card`) : null;
-    this.$slider = $(`.slider2--trainers`);
+    this.$slider = $(`.slider--trainers`);
     this.cardCount = this.cardCollection ? this.cardCollection.length : null;
     this.isAllExisting = this.section && this.cardCount > 0 && this.$slider;
     this.slider = null;

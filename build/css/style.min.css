@@ -404,22 +404,22 @@ template {
 .slick-next {
   background: url("../img/btn-right-desktop.svg") no-repeat 0 0; }
 
-.slider2--trainers .slick-prev {
+.slider--trainers .slick-prev {
   left: -37px; }
 
-.slider2--trainers .slick-next {
+.slider--trainers .slick-next {
   right: -37px; }
 
-.slider2--reviews .slick-prev {
+.slider--reviews .slick-prev {
   left: -17px; }
 
-.slider2--reviews .slick-next {
+.slider--reviews .slick-next {
   right: -17px; }
 
 @media (max-width: 1199px) {
-  .slider2--trainers .slick-prev {
+  .slider--trainers .slick-prev {
     left: -42px; }
-  .slider2--trainers .slick-next {
+  .slider--trainers .slick-next {
     right: -42px; } }
 
 @media (max-width: 767px) {
@@ -430,13 +430,13 @@ template {
     background: url("../img/btn-left-mobile.svg") no-repeat 0 0; }
   .slick-next {
     background: url("../img/btn-right-mobile.svg") no-repeat 0 0; }
-  .slider2--trainers .slick-prev {
+  .slider--trainers .slick-prev {
     left: -18px; }
-  .slider2--trainers .slick-next {
+  .slider--trainers .slick-next {
     right: -18px; }
-  .slider2--reviews .slick-prev {
+  .slider--reviews .slick-prev {
     left: 7px; }
-  .slider2--reviews .slick-next {
+  .slider--reviews .slick-next {
     right: 7px; } }
 
 @font-face {
@@ -1470,38 +1470,38 @@ input[type="radio"].visually-hidden {
     line-height: 32px; } }
 
 @media (min-width: 0) {
-  .slider2 {
+  .slider {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .slider2--trainers {
+    .slider--trainers {
       width: 1200px;
       margin: 0 40px; }
-    .slider2--reviews {
+    .slider--reviews {
       width: 640px;
       margin: 0 20px; }
-  .slider2__item > * {
+  .slider__item > * {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1; } }
 
 @media (min-width: 0) and (max-width: 1319px) and (min-width: 1200px) {
-  .slider2--trainers {
+  .slider--trainers {
     width: calc((260px + 2 * ((100vw - 1200px) * 0.12605 + 5px)) * 4);
     margin: 0 auto; } }
 
 @media (min-width: 0) and (max-width: 1199px) {
-  .slider2--trainers {
+  .slider--trainers {
     width: 596px;
     margin: 0 45px; }
-  .slider2--reviews {
+  .slider--reviews {
     width: 646px; } }
 
 @media (min-width: 0) and (max-width: 767px) {
-  .slider2--trainers {
+  .slider--trainers {
     width: 256px;
     margin: 0 19px; }
-  .slider2--reviews {
+  .slider--reviews {
     width: 306px;
     margin: 0; } }
 
