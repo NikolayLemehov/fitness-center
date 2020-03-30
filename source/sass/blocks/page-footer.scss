@@ -129,11 +129,17 @@
 }
 
 @media (max-width: $tablet-width - 1) {
+  $max_view: $tablet-width - 1;
+  $min_view: $mobile-width;
+
   .page-footer__nav {
+    $max_width: $max_view - 2 * 130px;
+    $min_width: $mobile-container-width;
+    $rate: ($max_width - $min_width) / ($max_view - $min_view);
     position: relative;
     flex-direction: column;
     justify-content: flex-start;
-    width: $mobile-container-width;
+    width: calc((100vw - #{$min_view}) * #{$rate} + #{$min_width});
     padding: 48px 0 38px;
   }
 
