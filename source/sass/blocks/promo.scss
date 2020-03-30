@@ -45,11 +45,11 @@
   border-bottom: 1px solid #ffffff;
 }
 
-.promo__date-day {
+.promo__date-item--day {
   margin: 0 0 16px;
 }
 
-.promo__date-day time {
+.promo__date-item--day time {
   display: flex;
 }
 
@@ -67,7 +67,7 @@
   line-height: 133%;
 }
 
-.promo__date-time time {
+.promo__date-item--time time {
   font-weight: bold;
   font-size: 40px;
   line-height: 118%;
@@ -141,7 +141,7 @@
     font-size: 12px;
   }
 
-  .promo__date-day {
+  .promo__date-item--day {
     margin: 0 0 6px;
   }
 
@@ -155,7 +155,7 @@
     font-size: 10px;
   }
 
-  .promo__date-time time {
+  .promo__date-item--time time {
     font-size: 24px;
   }
 
@@ -184,22 +184,54 @@
 }
 
 @media (max-width: $tablet-width - 1) {
+  $max_view: $tablet-width - 1;
+  $min_view: $mobile-width;
+
   .promo__inner {
+    $max_width: $max_view - 2 * 45px;
+    $min_width: $mobile-container-width;
+    $rate: ($max_width - $min_width) / ($max_view - $min_view);
     display: block;
-    width: $mobile-container-width;
+    width: calc((100vw - #{$min_view}) * #{$rate} + #{$min_width});
     padding: 70px 2px 0;
   }
 
   .promo__text {
-    padding: 48px 0 50px 45px;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 45px 50px;
+  }
+
+  .promo__inner h2 {
+    width: 145px / (145px + 55px) * 100%;
+    padding: 0 15px 0 0;
+  }
+
+  .promo__date {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 55px / (145px + 55px) * 100%;
+    margin: 0 0 0 -15px;
+  }
+
+  .promo__date-item {
+    margin-left: 15px;
+  }
+
+  .promo__date-item--day {
+    margin: 0 0 0 15px;
+  }
+
+  .promo__text a {
+    align-self: center;
   }
 
   .promo__image {
-    width: 290px;
+    width: 100%;
     height: 292px;
-    background: #000145 url("#{$prefix-css-img}super-games-mobile@1x.jpg") no-repeat center 0;
+    background: #000145 url("#{$prefix-css-img}super-games-mobile@1x.jpg") no-repeat center center;
 
     @include bg-retina("super-games-mobile@2x.jpg");
-    background-size: 290px 292px;
+    background-size: cover;
   }
 }
