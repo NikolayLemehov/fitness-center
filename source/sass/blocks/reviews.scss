@@ -32,10 +32,14 @@
 }
 
 @media (max-width: $tablet-width - 1) {
-  $r_slider_width: "(#{$review_card_mobile_width} + #{$review_card_between})";
+  $max_view: $tablet-width - 1;
+  $min_view: $mobile-width;
 
   .reviews__inner {
-    width: calc(#{$r_slider_width});
+    $max_width: $max_view - 2 * 45px;
+    $min_width: $mobile-container-width + 12;
+    $rate: ($max_width - $min_width) / ($max_view - $min_view);
+    width: calc((100vw - #{$min_view}) * #{$rate} + #{$min_width});
     padding: 39px 0 30px;
   }
 

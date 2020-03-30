@@ -49,8 +49,7 @@
 @media (max-width: $tablet-width - 1) {
   .review-card {
     width: $review_card_mobile_width;
-    height: $review-card-mobile-height;
-    padding: 48px 14px 0;
+    padding: 48px 14px 36px;
   }
 
   .review-card__image {
@@ -65,13 +64,14 @@
   }
 
   .review-card__name {
+    min-height: 52px;
     margin: 0 0 23px 110px;
     line-height: 130%;
   }
 
   .review-card__text {
-    width: 183px;
     margin: 0 auto;
+    padding: 0 8px;
     text-align: center;
   }
 }
