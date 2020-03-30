@@ -119,8 +119,14 @@
 }
 
 @media (max-width: $tablet-width - 1) {
+  $max_view: $tablet-width - 1;
+  $min_view: $mobile-width;
+
   .free-lesson__inner {
-    width: $mobile-container-width;
+    $max_width: $max_view - 2 * 130px;
+    $min_width: $mobile-container-width;
+    $rate: ($max_width - $min_width) / ($max_view - $min_view);
+    width: calc((100vw - #{$min_view}) * #{$rate} + #{$min_width});
     padding: 69px 2px 68px;
   }
 
