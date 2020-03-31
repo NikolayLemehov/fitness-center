@@ -105,14 +105,25 @@
 }
 
 @media (max-width: $tablet-width - 1) {
+  $max_view: $tablet-width - 1;
+  $min_view: $mobile-width;
+
   .gym__inner {
-    width: $mobile-width;
-    padding: 18px 0 66px;
+    $max_width: $max_view - 2 * 45px;
+    $min_width: $mobile-container-width - 4;
+    $rate: ($max_width - $min_width) / ($max_view - $min_view);
+    display: flex;
+    flex-direction: column;
+    width: calc((100vw - #{$min_view}) * #{$rate} + #{$min_width});
+    padding: 22px 0 66px;
   }
 
   .gym__text {
-    margin: 0 auto 33px;
-    width: 289px;
+    $max_width: $max_view - 2 * 130px;
+    $min_width: $mobile-container-width - 4;
+    $rate: ($max_width - $min_width) / ($max_view - $min_view);
+    width: calc((100vw - #{$min_view}) * #{$rate} + #{$min_width});
+    margin: 0 auto 25px;
     text-align: left;
   }
 
@@ -127,21 +138,27 @@
   }
 
   .gym__paragraph {
-    width: 260px;
+    width: 100%;
+    padding: 0 27px 0 0;
   }
 
   .gym__image {
-    width: 320px;
+    $max_width: $max_view - 2 * 45px;
+    $min_width: 320px;
+    $rate: ($max_width - $min_width) / ($max_view - $min_view);
+    align-self: center;
+    width: calc((100vw - #{$min_view}) * #{$rate} + #{$min_width});
     height: 313px;
     margin: 0 0 210px;
-    background: url("#{$prefix-css-img}gym-mobile@1x.jpg") no-repeat 0 0;
+    background: url("#{$prefix-css-img}gym-mobile@1x.jpg") no-repeat center center;
 
     @include bg-retina("gym-mobile@2x.jpg");
-    background-size: 320px 313px;
+    background-size: cover;
   }
 
   .gym__video {
-    left: 0;
+    left: 50%;
     bottom: -207px;
+    transform: translateX(-50%);
   }
 }

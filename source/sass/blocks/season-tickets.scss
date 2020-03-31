@@ -156,12 +156,18 @@
 }
 
 @media (max-width: $tablet-width - 1) {
+  $max_view: $tablet-width - 1;
+  $min_view: $mobile-width;
+
   .season-tickets__bg {
     background: none;
   }
 
   .season-tickets__inner {
-    width: $mobile-container-width;
+    $max_width: $max_view - 2 * 160px;
+    $min_width: $mobile-container-width;
+    $rate: ($max_width - $min_width) / ($max_view - $min_view);
+    width: calc((100vw - #{$min_view}) * #{$rate} + #{$min_width});
     padding: 70px 2px 35px;
   }
 
@@ -172,7 +178,11 @@
   }
 
   .season-tickets__tabs {
-    width: 100%;
+    $max_width: $max_view - 2 * 217px;
+    $min_width: $mobile-container-width;
+    $rate: ($max_width - $min_width) / ($max_view - $min_view);
+    width: calc((100vw - #{$min_view}) * #{$rate} + #{$min_width});
+    padding: 0 5px 0 0;
   }
 
   .season-tickets__tabs-item button {

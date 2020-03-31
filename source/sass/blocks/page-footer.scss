@@ -103,7 +103,7 @@
 @media (max-width: $desktop-container-width - 1) {
   .page-footer__nav {
     width: $tablet-container-width;
-    padding: 45px 0 38px;
+    padding: 45px 0 43px;
   }
 
   .page-footer__logo a {
@@ -140,7 +140,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width: calc((100vw - #{$min_view}) * #{$rate} + #{$min_width});
-    padding: 48px 0 38px;
+    padding: 48px 0 50px;
   }
 
   .page-footer__logo {

@@ -55,10 +55,13 @@
   @media (max-width: $tablet-width - 1) {
     .slider {
       &--trainers {
-        $trainer-card-width: 226px;
-        $trainer_margin: 15px;
-        width: $trainer-card-width + 2 * $trainer_margin;
-        margin: 0 19px;
+        $max_view: $tablet-width - 1;
+        $min_view: $mobile-width;
+        $max_width: $max_view - 2 * 130px;
+        $min_width: $mobile-container-width;
+        $rate: ($max_width - $min_width) / ($max_view - $min_view);
+        width: calc((100vw - #{$min_view}) * #{$rate} + #{$min_width});
+        margin: 0 auto;
       }
 
       &--reviews {

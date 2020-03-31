@@ -54,10 +54,8 @@
 }
 
 @media (max-width: $tablet-width - 1) {
-  $slider_width: "(#{$mobile-container-width} - 0px)";
-
   .trainers__inner {
-    width: calc(#{$slider_width});
+    width: auto;
     padding: 70px 0;
   }
 
